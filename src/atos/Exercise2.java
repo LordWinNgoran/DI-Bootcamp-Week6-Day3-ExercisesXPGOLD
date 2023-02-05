@@ -13,15 +13,15 @@ import java.util.Scanner;
 public class Exercise2 {
 
 	public static void main(String[] args) {
-		System.out.println("########## Exercice 2 ###########");
 		try (Scanner scanner = new Scanner(System.in)) {
+			//Declaration part
 			double log = 1;
-			System.out.println("Please enter a number : ");
-			int userInput = scanner.nextInt();
-			System.out.println("nbre log :");
-			int logNumber = scanner.nextInt();
+			int userEntry;
 			double i = 1;
-			while (i < logNumber) {
+			System.out.println("Enter your number  :");
+			userEntry = scanner.nextInt();
+			
+			while (i < userEntry) {
 				if (i % 2 == 0) {
 					log = log - (1 / i);
 				} else {
@@ -29,7 +29,7 @@ public class Exercise2 {
 				}
 				i++;
 			}
-			System.out.println("le logarithme de " + userInput + " est : " + log);
+			System.out.println("The natural logarithm of 2 " + userEntry + " is : " + log);
 		}
 
 	}
